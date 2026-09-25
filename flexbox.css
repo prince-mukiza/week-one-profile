@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+       padding: 20px;
+        background: lightblue;
+}
+
+.links {
+    display: flex;
+     gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+  flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+}
+
+.box {
+    background: lightblue;
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+.card {
+     background: lightblue;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
